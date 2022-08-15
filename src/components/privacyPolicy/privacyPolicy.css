@@ -1,0 +1,13 @@
+.privacyPolicy {
+    padding: 100px 0;
+}
+
+.privacyPolicy h2 {
+    color: #051242;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.privacyPolicy p {
+    margin-bottom: 20px;
+}

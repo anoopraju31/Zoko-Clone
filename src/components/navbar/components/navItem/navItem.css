@@ -1,0 +1,113 @@
+.navItem {
+    position: relative;
+    padding: 15px  0;
+}
+
+.navItem__link {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: flex;
+}
+.navItem__link a{
+    color: #fff;
+}
+
+.navItem__link span {
+    margin-left: 3px;
+}
+
+.navItem__link:hover,
+.navItem__link a:hover {
+    color: #1d42d9;
+}
+
+.navItem__dropdown {
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
+    background: #fff;
+    position: absolute;
+    border: none;
+    top: 80px;
+    left: 0;
+    width: 240px;
+    z-index: 99;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    padding: 0;
+}
+
+.navItem__dropdown:before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: "";
+    border-top: 0;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    top: -8px;
+    left: 20px;
+    z-index: -11;
+}
+
+.navItem:hover .navItem__dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+}
+
+.navItem__dropdownItem {
+    text-transform: capitalize;
+    margin: 0;
+    color: #181818;
+    border-bottom: 1px dashed #eee;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.navItem__dropdownItem a{
+    color: #181818;
+    padding: 10px 25px;
+    display: block;
+}
+
+.navItem__dropdownItem a:visited {
+    color: #181818;
+}
+
+.navItem__dropdownItem:hover a {
+    color: #fff;
+}
+
+.navItem__dropdownItem:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100px;
+    background: #1d42d9;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+.navItem__dropdownItem:hover:before {
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    .navItem__link {
+        margin-right: 20px;
+        font-size: 14px;
+    }
+}

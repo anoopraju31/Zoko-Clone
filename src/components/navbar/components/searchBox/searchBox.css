@@ -1,0 +1,24 @@
+.searchBox {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 200px 20px;
+    align-items: center;
+    border-bottom: 1px solid #f5faff;
+    margin-right: 20px;
+    margin-top: -6.5px;
+}
+
+.searchBox input {
+    background: transparent;
+    border: none;
+    color: #fff !important;
+    margin-bottom: 0;
+}
+
+.searchBox input::placeholder {
+    color: #fff;
+}
+
+.searchBox__icon {
+    color: #fff;
+}

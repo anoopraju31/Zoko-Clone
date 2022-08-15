@@ -1,0 +1,126 @@
+.company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 110px  0;
+}
+
+.company_bg {
+    background-color: #f5faff;
+}
+
+.company_bg_white {
+    background: #fff;
+}
+
+.company__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 50px;
+    position: relative;
+}
+
+.company__content p.first {
+    color: #1d42d9;
+    font-size: 14px;
+}
+
+.company__content p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.company__content p.last {
+    margin-bottom: 40px;
+}
+
+.company__content h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #293a5c;
+    font-family: Catamaran,sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.company__img {
+    height: fit-content;
+    position: relative;
+    z-index: 1;
+}
+
+.company__img:before {
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 100px;
+    background: #e6335a;
+    z-index: -1;
+    left: -30px;
+    top: -30px;
+    border-radius: 4px;
+}
+
+.company__img:after {
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 100px;
+    background: #051242;
+    z-index: -1;
+    right: -30px;
+    bottom: -30px;
+    border-radius: 4px;
+}
+
+.company__img img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1280px) {
+    .company__img:before {
+        left: unset;
+        right: -30px;
+    }
+
+    .company__img::after {
+        right: unset;
+        left: -30px;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .company {
+        padding: 0;
+    }
+
+    .company__container {
+        padding: 0 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+    }
+
+    .company__content,
+    .company__img {
+        grid-column: 1/-1;
+    }
+
+    .company__content {
+        height: auto;
+        margin-bottom: 50px;
+        grid-row: 1/2;
+    }
+
+    .company__img{
+        grid-row: 2/-1;
+    }
+
+    .company__img:after,
+    .company__img:before {
+        display: none;
+    }
+}

@@ -1,0 +1,52 @@
+.teamMember {
+    padding: 100px 0;
+}
+
+.teamMember__header {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.teamMember__header p.first {
+    color: #1d42d9;
+    margin-bottom: 8px;
+}
+
+.teamMember__header h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #293a5c;
+    margin-bottom: 20px;
+    font-family: Catamaran,sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.teamMember__header p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+
+.App .teamMember .swiper-button-next, 
+.App .teamMember .swiper-button-prev {
+    color:  rgb(29, 66, 217);
+} 
+
+
+@media screen and (max-width: 960px) {
+    .teamMember__header {
+        width: 100%;
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .teamMember__header {
+        padding: 20px 0;
+    }
+}

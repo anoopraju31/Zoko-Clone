@@ -1,0 +1,24 @@
+.go-top {
+    position: fixed;
+    cursor: pointer;
+    top: 93%;
+    right: -10%;
+    background-color: #1d42d9;
+    color: #fff;
+    z-index: 4;
+    width: 40px;
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .9s;
+}
+
+.go-top.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    right: 3%;
+    top: 93%;
+}

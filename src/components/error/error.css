@@ -1,0 +1,57 @@
+.errorPage {
+    height: 80vh;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorContainer {
+    position: relative;
+    z-index: -1;
+}
+
+.errorContainer h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 230px;
+    font-weight: 900;
+    background: url(../../img/bg.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+.errorPage h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.errorPage p {
+    width: 40%;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+
+@media screen and (max-width: 998px) {
+    .errorContainer h1 {
+        font-size: 180px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .errorContainer h1 {
+        font-size: 120px;
+    }
+    .errorPage p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .errorContainer h1 {
+        font-size: 80px;
+    }
+}

@@ -1,0 +1,20 @@
+.caseStudyDetail {
+    padding: 100px 0;
+}
+
+.caseStudyDetail_img {
+    margin-bottom: 30px;
+}
+
+.body_divide {
+    margin-top: 30px;
+}
+
+.caseStudyDetail_body h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.caseStudyDetail_body p {
+    margin-bottom: 15px;
+}

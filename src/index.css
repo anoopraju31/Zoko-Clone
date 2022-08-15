@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.8;
+    font-family: Open Sans,sans-serif;
+    color: #7a7e9a;
+}
+
+h1, h2, h3, h4 {
+  color: #293a5c;
+  font-family: Catamaran,sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+    transition: all .5s;
+    text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.button_stretch {
+  width: fit-content;
+}
+
+.button_stretch:hover {
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .container {
+    width: 80%;
+    padding: 70px 0;
+  }
+}
+
+@media screen and (max-width:760px) {
+  .container {
+    width: 100%;
+    padding: 50px 20px;
+  }
+}

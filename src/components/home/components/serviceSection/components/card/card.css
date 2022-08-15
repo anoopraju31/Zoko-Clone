@@ -1,0 +1,98 @@
+.card {
+    min-width: 290px;
+    width: 90%;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    border-radius: 4px;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%)
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    color: #fff;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #051242;
+    z-index: -1;
+    -webkit-transition: all .5s;
+    transition: all .5s ease 0s;
+}
+
+.card:hover:before {
+    left: 0px;
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background: url(/src/img/service-hover.png) no-repeat;
+    z-index: -1;
+    transition: all .5s ease 0s;
+}
+
+.card:hover:after {
+    right: 0;
+}
+
+.card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.card__content h4 {
+    color: #051242;
+    margin-bottom: 5px;
+    font-family: Catamaran,sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.card:hover .card__content h4,
+.card:hover .card__readMore a {
+    color: #fff;
+}
+
+.card__content p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.card__readMore a {
+    font-size: 14px;
+    color: #293a5c;
+    font-weight: 600;
+    line-height: 1;
+    transition: all .5s;
+    cursor: pointer;
+
+}
+
+.card__readMore a:hover {
+    letter-spacing: 1px;
+    color: #293a5c;
+}
+
+@media screen and (max-width: 760px) {
+    .card {
+        width: 100%;
+    }
+}

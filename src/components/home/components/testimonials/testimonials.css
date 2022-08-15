@@ -1,0 +1,78 @@
+.testimonials {
+    padding: 100px 0;
+    background: rgb(245, 250, 255);
+}
+
+.testimonials_header {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonials_header p.first {
+    color: #1d42d9;
+    margin-bottom: 8px;
+}
+
+.testimonials_header h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #293a5c;
+    margin-bottom: 20px;
+    font-family: Catamaran,sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.testimonials_header p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.testimonials_container {
+    transform: translate3d(-1204px, 0px, 0px);
+    transition: all 0s ease 0s;
+    position: relative;
+    display: flex;
+}
+
+.testimonials_car {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    margin: 0 20px;
+    z-index: 1;
+}
+ 
+.App .testimonials .swiper-button-prev {
+    left: 0px;
+}
+
+.App .testimonials .swiper-button-next {
+    right: 0px;
+}
+
+
+.App .testimonials .swiper-button-next, 
+.App .testimonials .swiper-button-prev {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    cursor: pointer;
+    border-radius: 3px;
+    
+    position: absolute;
+    top: 0px;
+    background-color: rgb(29, 66, 217);
+    color: #fff;
+    z-index: 10;
+} 
+
+.App .testimonials .swiper-button-next:after, 
+.App .testimonials .swiper-button-prev:after {
+    font-size: 18px;
+}

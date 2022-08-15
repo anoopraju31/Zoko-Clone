@@ -1,0 +1,27 @@
+.newsLetterForm {
+    margin: 20px 0 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+.newsLetterForm input {
+    flex: 0.7;
+    height: 48px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+}
+
+.newsLetterForm input::placeholder {
+    color: #fff;
+}
+
+.newsLetterForm .button {
+    flex: 0.3;
+    position: relative;
+    top: 0;
+    left: -4px;
+}

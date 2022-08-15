@@ -1,0 +1,70 @@
+.workingProcess {
+    background-color: #051242;
+    padding: 100px 0 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.workingProcess__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.workingProcess__header {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+.workingProcess__header p {
+    font-size: 15px;
+}
+
+.workingProcess__header h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.workingProcess__processes {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 998px) {
+    .workingProcess {
+        padding: 50px 0;
+    }
+
+    .workingProcess__header {
+        width: 100%;
+    }
+
+    .workingProcess__header h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .workingProcess__processes {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .workingProcess {
+        padding: 0;
+    }
+    
+    .workingProcess__processes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}

@@ -1,0 +1,12 @@
+.featureItem {
+    display: flex;
+    align-items: center;
+    color: #051242;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.featureItem .icon {
+    margin-right: 10px;
+}

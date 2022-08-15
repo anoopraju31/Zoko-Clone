@@ -1,0 +1,50 @@
+.caseCard {
+    transition: all .5s;
+}
+
+.caseCard:hover {
+    transform: translateY(-3px);
+}
+
+.caseCard__img img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 100%;
+    height: auto;
+}
+
+.caseCard__content {
+    box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+    padding: 30px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.caseCard__content h4 {
+    font-size: 21px;
+    line-height: 1.5;
+    color: #293a5c;
+    font-family: Catamaran,sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.caseCard__content h4:hover {
+    color: #1d42d9;
+}
+
+.caseCard__content p {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.caseCard__content p.last {
+    font-size: 14px;
+    color: #293a5c;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.5s;
+}

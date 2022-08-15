@@ -1,0 +1,33 @@
+.footerSection {
+    padding-left: 30px; 
+}
+
+
+.footerSection h3 {
+    font-size: 25px;
+    color: #f5faff;
+    margin-bottom: 20px;
+    position: relative;
+    border-bottom: 1px solid #2d3d5f;
+    left: 0;
+    bottom: 0;
+    font-family: Catamaran,sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.footerSection h3:before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: #e6335a;
+    bottom: -2px;
+    left: 0;
+}
+
+@media screen and (max-width: 998px) {
+    .footerSection {
+        padding-left: 0;
+    }
+}

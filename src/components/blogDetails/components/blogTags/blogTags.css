@@ -1,0 +1,16 @@
+.blogTag {
+    color: #666;
+    font-weight: 400;
+    font-size: 14px!important;
+    padding: 7px 10px;
+    border: 1px dashed #eee;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-transform: capitalize;
+    width: fit-content;
+}
+
+.blogTag:hover {
+    background-color: #1d42d9;
+    color: #fff;
+}

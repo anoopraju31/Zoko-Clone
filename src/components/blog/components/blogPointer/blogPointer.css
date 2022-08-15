@@ -1,0 +1,18 @@
+.blogPointer {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #1d42d9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.active,
+.blogPointer:hover {
+    background: #051242;
+}

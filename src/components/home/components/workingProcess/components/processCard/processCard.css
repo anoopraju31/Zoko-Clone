@@ -1,0 +1,78 @@
+.processCard {
+    margin:0 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.processCard__img {
+    background: #1e2a55;
+    width: 60px;
+    height: 60px;
+    line-height: 56px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.processCard__img img {
+    max-width: 35px;
+    height: auto;
+    vertical-align: middle;
+    margin: 12px;
+}
+
+.processCard__content {
+    text-align: center;
+    color: #fff;
+}
+
+.processCard__content h4 {
+    margin-bottom: 10px;
+    font-family: Catamaran,sans-serif;
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.processCard__img span {
+    position: absolute;
+    z-index: 1;
+}
+
+.processCard__img span:before {
+    position: absolute;
+    content: "";
+    height: 170px;
+    border-right: 1px dashed #f5faff;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: -55px;
+    left: 150px;
+    z-index: -1;
+}
+
+.processCard__img span img {
+    max-width: 35px;
+    margin-left: 130px;
+    animation: leftani 5s linear infinite;
+}
+
+@keyframes leftani {
+    0% {
+        transform: translateX(-15px);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    100% {
+        transform: translateX(-15px);
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .processCard__img span {
+        display: none;
+    }
+}

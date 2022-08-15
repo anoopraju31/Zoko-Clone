@@ -1,0 +1,48 @@
+.blogSearchBox {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.blogSearchBox input {
+    background-color: transparent;
+    height: 50px;
+    padding: 6px 15px;
+    margin-bottom: 0;
+    border: 1px solid #eee;
+    width: 100%;
+    display: block;
+    outline: 0;
+    transition: .5s;
+}
+
+.blogSearchBox input:focus {
+    border-color: #1d42d9;
+}
+
+.blogSearchBox_icon {
+    outline: 0;
+    height: 50px;
+    width: 50px;
+    border: none;
+    color: #fff;
+    background-color: #1d42d9;
+    -webkit-transition: .5s;
+    transition: .5s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 998px) {
+    .blog_content_img {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    .blog_content_img {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}

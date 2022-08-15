@@ -1,0 +1,46 @@
+.dropDown {
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.dropDown__header {
+    padding: 15px 20px;
+    color: #051242;
+    position: relative;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+    display: flex;
+    align-items: center;
+}
+
+.dropDown__header .icon {
+    margin-right: 5px;
+    transition: all 0.5s;
+}
+
+.dropDown__header .icon__rotate {
+    transform: rotate(90deg);
+}
+
+.dropDown__body {
+    padding: 15px 20px;
+    box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+    border-top: 1px solid #eee;
+    z-index: 2;
+    transition: all 0.5s;
+    font-size: 15px;
+    color: #50607f;
+}
+
+.dropDown__hide {
+    display: none;
+}
+
+.dropDown__show {
+    display: block;
+}

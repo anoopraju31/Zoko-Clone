@@ -1,0 +1,35 @@
+.testimonialCard {
+    z-index: 1;
+}
+
+.single-client {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.single-client img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    right: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(29, 66, 217);
+    border-image: initial;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.single-client p {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.single-client h2 {
+    margin-bottom: 0px;
+}

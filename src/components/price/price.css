@@ -1,0 +1,61 @@
+.pricingPage {
+    padding: 100px 0;
+}
+
+
+.pricingPage_header {
+    width: 60%;
+    margin: 0 auto 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pricingPage_header p {
+    font-size: 15px;
+}
+
+.pricingPage_header p.first {
+    color: #1d42d9;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.pricingPage_header  h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #293a5c;
+    margin-bottom: 20px;
+    font-family: Catamaran,sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.pricing_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+
+@media screen and (max-width:998px) {
+    .pricingPage_header {
+        width: 100%;
+    }
+    
+    .pricing_container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .pricing_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+}
